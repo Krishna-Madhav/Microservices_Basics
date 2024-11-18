@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: QUESTION-SERVICE
+  datasource:
+    url: jdbc:mysql://localhost:3306/microservices_beginners
+    username: root
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+server:
+  port: 8082
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
